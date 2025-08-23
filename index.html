@@ -48,27 +48,60 @@
 </section>
 
   <!-- CONTACT FORM -->
-    <section id="formulario" class="py-20 px-6 md:px-16 bg-white">
-      <h2 class="text-3xl font-bold text-center mb-8">¿Te han hecho llorar en el baño del curro?</h2>
-      <p class="text-center text-gray-600 mb-10">Déjanos tu historia, tu contacto, o simplemente insúltanos. Este formulario es para ti.</p>
-      <form action="https://ejemplo.com/api/contacto" method="POST" class="max-w-xl mx-auto space-y-6">
-        <div>
-          <label for="name" class="block mb-2 text-sm font-medium">Nombre</label>
-          <input type="text" id="name" name="name" required class="w-full border border-gray-300 p-3 rounded" />
-        </div>
-        <div>
-          <label for="email" class="block mb-2 text-sm font-medium">Correo electrónico</label>
-          <input type="email" id="email" name="email" required class="w-full border border-gray-300 p-3 rounded" />
-        </div>
-        <div>
-          <label for="mensaje" class="block mb-2 text-sm font-medium">Tu historia, queja o trauma laboral</label>
-          <textarea id="mensaje" name="mensaje" rows="5" required class="w-full border border-gray-300 p-3 rounded"></textarea>
-        </div>
-        <div class="text-center">
-          <button type="submit" class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 rounded-full">Enviar drama</button>
-        </div>
-      </form>
-    </section>
+<section id="formulario" class="py-20 px-6 md:px-16 bg-white">
+  <h2 class="text-3xl font-bold text-center mb-8">¿Te han hecho llorar en el baño del curro?</h2>
+  <p class="text-center text-gray-600 mb-10">
+    Déjanos tu historia, tu contacto, o simplemente insúltanos. Este formulario es para ti.
+  </p>
+  <form action="https://ejemplo.com/api/contacto" method="POST" class="max-w-xl mx-auto space-y-6">
+    <div>
+      <label for="name" class="block mb-2 text-sm font-medium text-gray-800">Nombre</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        autocomplete="name"
+        aria-label="Nombre"
+        placeholder="Tu nombre, apodo o alias laboral"
+        class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+      />
+    </div>
+    <div>
+      <label for="email" class="block mb-2 text-sm font-medium text-gray-800">Correo electrónico</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        autocomplete="email"
+        aria-label="Correo electrónico"
+        placeholder="paquete@correo.com"
+        class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+      />
+    </div>
+    <div>
+      <label for="mensaje" class="block mb-2 text-sm font-medium text-gray-800">Tu historia, queja o trauma laboral</label>
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        rows="5"
+        required
+        aria-label="Mensaje"
+        placeholder="Aquí va tu 'aventura'. Prometemos no reírnos (mucho)."
+        class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+      ></textarea>
+    </div>
+    <div class="text-center">
+      <button
+        type="submit"
+        class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 rounded-full transition"
+      >
+        Enviar drama
+      </button>
+    </div>
+  </form>
+</section>
 
     <!-- FOOTER -->
     <footer class="py-6 text-center text-sm text-gray-500 bg-gray-50">

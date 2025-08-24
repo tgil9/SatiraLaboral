@@ -2,102 +2,125 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sátira Laboral</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sátira Laboral — Fix Top</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .text-balance { text-wrap: balance; }
+  </style>
 </head>
-<body class="bg-white text-gray-800 font-sans">
-
-  <!-- Hero -->
-  <section class="relative h-[85vh] flex items-center justify-center text-center text-white">
-    <img 
-      src="https://raw.githubusercontent.com/tgil9/SatiraLaboral/main/images/fotolanding1.jpg" 
-      alt="Hero background" 
-      class="absolute inset-0 w-full h-full object-cover"
+<body class="bg-white text-gray-800 font-sans antialiased selection:bg-yellow-200/60">
+  <!-- HERO -->
+  <section class="relative overflow-hidden flex items-center py-20 sm:py-28 md:min-h-[80vh]">
+    <img
+      src="https://raw.githubusercontent.com/tgil9/SatiraLaboral/main/images/fotolanding1.jpg"
+      alt="Sátira Laboral — portada"
+      class="absolute inset-0 w-full h-full object-cover object-top"
     />
-    <div class="relative z-10 px-6 max-w-3xl">
-      <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-xl">
+    <div class="absolute inset-0 bg-black/50 sm:bg-black/40"></div>
+
+    <div class="relative z-10 mx-auto max-w-3xl px-4 sm:px-6 text-center text-white">
+      <h1 class="text-balance font-extrabold leading-tight drop-shadow-xl text-4xl sm:text-5xl md:text-6xl">
         Sátira Laboral
       </h1>
-      <p class="text-2xl md:text-3xl mb-8 drop-shadow-lg">
+      <p class="mt-5 text-lg sm:text-xl md:text-2xl drop-shadow-lg">
         Un podcast donde las emociones reprimidas salen sin pedir permiso, ni perdón.
       </p>
-      <a href="#formulario" class="bg-white text-gray-900 font-semibold py-3 px-6 rounded-full shadow hover:bg-gray-200 transition">
+      <a href="#formulario" class="mt-8 inline-block bg-white text-gray-900 font-semibold py-3 px-6 rounded-full shadow hover:bg-gray-200 transition">
         Avísame cuando empiece
       </a>
     </div>
   </section>
 
-  <!-- ¿De qué va esto? -->
-<section class="relative h-[80vh] flex items-center justify-start text-black">
-  <img 
-    src="https://raw.githubusercontent.com/tgil9/SatiraLaboral/main/images/fotolanding2.jpg" 
-    alt="¿De qué va esto?" 
-    class="absolute inset-0 w-full h-full object-cover"
-  />
-  <div class="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-16 flex items-center">
-    <div class="md:w-1/2" style="transform: translateX(10%);">
-      <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-left">¿De qué va esto?</h2>
-      <p class="text-xl leading-relaxed text-justify text-black">
-        Sátira Laboral no es un curso. No es coaching. No es motivación. 
-        Aquí decimos la puta verdad.
-      </p>
-    </div>
-  </div>
-</section>
+  <!-- ¿DE QUÉ VA ESTO? -->
+  <section class="relative overflow-hidden py-20 sm:py-24">
+    <img
+      src="https://raw.githubusercontent.com/tgil9/SatiraLaboral/main/images/fotolanding2.jpg"
+      alt="¿De qué va esto? — fondo"
+      class="absolute inset-0 w-full h-full object-cover object-top"
+      loading="lazy"
+    />
+    <div class="absolute inset-0 bg-black/45 sm:bg-black/35"></div>
 
-  <!-- Historias reales -->
-<section class="relative h-[90vh] flex items-center justify-end text-white">
-  <img 
-    src="https://raw.githubusercontent.com/tgil9/SatiraLaboral/main/images/fotolanding3.jpg" 
-    alt="Historias reales" 
-    class="absolute inset-0 w-full h-full object-cover"
-  />
-  <div class="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-16 flex items-center justify-end">
-    <div class="md:w-1/2 text-left" style="transform: translateX(-10%);">
-      <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-left text-white">Historias reales de un mundo laboral surrealista</h2>
-      <p class="text-xl leading-relaxed text-justify text-white">
-        El podcast donde las emociones reprimidas salen sin pedir perdón.  
-        Sátira Laboral es tu válvula de escape: historias breves, reales y absurdamente familiares.
-      </p>
+    <div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6">
+      <div class="max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl">
+        <h2 class="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold text-balance">
+          ¿De qué va esto?
+        </h2>
+        <p class="mt-4 sm:mt-6 text-white/95 text-base sm:text-lg md:text-xl leading-relaxed">
+          Sátira Laboral no es un curso. No es coaching. No es motivación.
+          Aquí decimos la puta verdad.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Para quién es -->
-<section class="relative h-[80vh] flex items-center justify-start text-black">
-  <img 
-    src="https://raw.githubusercontent.com/tgil9/SatiraLaboral/main/images/fotolanding4.jpg" 
-    alt="¿Para quién es este podcast?" 
-    class="absolute inset-0 w-full h-full object-cover"
-  />
-  <div class="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-16 flex items-center">
-    <div class="md:w-1/2 text-right" style="transform: translateX(10%);">
-      <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-left">¿Para quién es este podcast?</h2>
-      <p class="text-xl leading-relaxed text-justify text-black">
-        Para los que acaban de incorporarse al mercado laboral y ya están cuestionando su lugar en el ecosistema.
-      </p>
+  <!-- HISTORIAS REALES -->
+  <section class="relative overflow-hidden py-20 sm:py-24">
+    <img
+      src="https://raw.githubusercontent.com/tgil9/SatiraLaboral/main/images/fotolanding3.jpg"
+      alt="Historias reales — fondo"
+      class="absolute inset-0 w-full h-full object-cover object-top"
+      loading="lazy"
+    />
+    <div class="absolute inset-0 bg-black/50 sm:bg-black/40"></div>
+
+    <div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6">
+      <div class="ml-auto max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl text-left">
+        <h2 class="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold text-balance">
+          Historias reales de un mundo laboral surrealista
+        </h2>
+        <p class="mt-4 sm:mt-6 text-white/95 text-base sm:text-lg md:text-xl leading-relaxed">
+          El podcast donde las emociones reprimidas salen sin pedir perdón.
+          Sátira Laboral es tu válvula de escape: historias breves, reales y absurdamente familiares.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- PARA QUIÉN ES -->
+  <section class="relative overflow-hidden py-20 sm:py-24">
+    <img
+      src="https://raw.githubusercontent.com/tgil9/SatiraLaboral/main/images/fotolanding4.jpg"
+      alt="¿Para quién es? — fondo"
+      class="absolute inset-0 w-full h-full object-cover object-top"
+      loading="lazy"
+    />
+    <div class="absolute inset-0 bg-black/45 sm:bg-black/35"></div>
+
+    <div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6">
+      <div class="max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl">
+        <h2 class="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold text-balance">
+          ¿Para quién es este podcast?
+        </h2>
+        <p class="mt-4 sm:mt-6 text-white/95 text-base sm:text-lg md:text-xl leading-relaxed">
+          Para los que acaban de incorporarse al mercado laboral y ya están cuestionando su lugar en el ecosistema.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <!-- FORMULARIO -->
-  <section id="formulario" class="py-20 px-6 md:px-16 bg-white">
-    <h2 class="text-4xl font-bold text-center mb-8">Cuéntanos esa historia que ni tú te crees del todo.</h2>
-    <p class="text-center text-gray-600 mb-10 text-lg">No tenemos soluciones, pero sí oídos y algo de mala leche.</p>
-    
+  <section id="formulario" class="py-16 sm:py-20 px-4 sm:px-6 md:px-8 bg-white">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4 text-balance">
+      Cuéntanos esa historia que ni tú te crees del todo.
+    </h2>
+    <p class="text-center text-gray-600 mb-10 text-base sm:text-lg">
+      No tenemos soluciones, pero sí oídos y algo de mala leche.
+    </p>
+
     <form action="https://ejemplo.com/api/contacto" method="POST" class="max-w-xl mx-auto space-y-6">
       <div>
         <label for="name" class="block mb-2 text-sm font-medium">Nombre (Te lo puedes inventar)</label>
-        <input type="text" id="name" name="name" required class="w-full border border-gray-300 p-3 rounded" />
+        <input type="text" id="name" name="name" required class="w-full border border-gray-300 p-3 rounded outline-none focus:ring-2 focus:ring-yellow-400" />
       </div>
       <div>
         <label for="email" class="block mb-2 text-sm font-medium">Correo electrónico (El que usas, que te conozco...)</label>
-        <input type="email" id="email" name="email" required class="w-full border border-gray-300 p-3 rounded" />
+        <input type="email" id="email" name="email" required class="w-full border border-gray-300 p-3 rounded outline-none focus:ring-2 focus:ring-yellow-400" />
       </div>
       <div>
         <label for="mensaje" class="block mb-2 text-sm font-medium">No hace falta firmarlo, con que lo sueltes nos vale.</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required class="w-full border border-gray-300 p-3 rounded"></textarea>
+        <textarea id="mensaje" name="mensaje" rows="5" required class="w-full border border-gray-300 p-3 rounded outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
       </div>
       <div class="text-center">
         <button type="submit" class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 rounded-full">
@@ -111,6 +134,5 @@
   <footer class="py-6 text-center text-sm text-gray-500 bg-gray-50">
     © 2025 Sátira Laboral · Contacto: <a href="mailto:tgil@icloud.com" class="underline">tgil@icloud.com</a>
   </footer>
-
 </body>
 </html>
